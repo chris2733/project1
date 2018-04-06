@@ -1,14 +1,18 @@
 
 // getting loader first, then page
+function delayloader() {
+  $("#loader").fadeIn(2000);
+  $("#innerloader").hide().fadeIn(2000); // fade in the logo
+  $("#loaderlogo").hide().fadeIn(2000);
+}
 $("#loader").hide()
 $("#main").hide()
+setTimeout(delayloader,200);
+
 var myVar= "";
 
 function myFunction() {
     myVar = setTimeout(showPage, 3000);
-    $("#loader").fadeIn(2000);
-    $("#innerloader").hide().fadeIn(2000); // fade in the logo
-    $("#loaderlogo").hide().fadeIn(2000);
 }
 
 

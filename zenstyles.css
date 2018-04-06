@@ -8,6 +8,7 @@
 /* this stops the scrollbar from shoving the content over when it is unhidden with js */
 html {
   overflow-y: scroll;
+  cursor: url("pencilcursor.png"), default;
 }
 
 /* sets the background to black, this wasnt a problem until bootstrap was linked */
